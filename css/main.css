@@ -1,0 +1,445 @@
+
+/*I don't really want to use the universal selector to change anything but its a requirement*/
+
+body, html {
+		height: 100%;
+		margin: 0;
+		font: 400 15px/1.8 "Lato", sans-serif;
+		color: #000;
+	}
+div
+{
+	background-color:#0F0015;
+
+}
+.centerblurb a {
+    text-align: center;
+    display: block;
+    margin: 10;
+    font: 400 15px/1.8 "Lato", sans-serif;
+
+}
+	.bgimg-1, .bgimg-2, .bgimg-3 {
+		position: relative;
+		opacity: 1;
+		/* real heart of paralax scrolling,
+		scroll is default */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+	.bgimg-1 {
+		background-image: url("../images/para.jpg");
+		min-height: 60%;
+	}
+
+	.bgimg-2 {
+		background-image: url("../images/para2.jpeg");
+		min-height: 400px;
+	}
+
+	.bgimg-3 {
+		background-image: url("../images/para3.jpeg");
+		min-height: 400px;
+	}
+	
+	.leftblurb{
+		float:left;
+		background-color: transparent;
+		padding: 18px;
+	}
+	.rightblurb{
+		float: right;
+		background-color: transparent;
+		padding: 18px;
+	}
+	.centerblurb{
+		position:absolute;
+		left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+
+    	width: 20%;
+		
+		background-color: transparent;
+		padding: 18px;
+		margin: 10;
+	}
+
+	.caption {
+		/*to fix the problem of float taking 
+		elements out of the flow*/
+		overflow: auto;
+		position:relative;
+		padding:20px 40px;
+		left: 0;
+		height: auto;
+		color: #fff;
+	}
+	.lport{
+		float:left;
+		padding: 15px;
+		width: 48%;
+
+	}
+	.rport{
+		padding: 15px;
+		float: right;
+		width: 48%;
+
+	}
+
+.caption0{
+		padding:20px 40px;
+		
+		text-align: center;
+		overflow: auto;
+		position:relative;
+		color: #fff;
+}
+
+	.caption0 div{
+		vertical-align: top;
+
+		display: inline-block;
+		text-align: justify;
+
+		padding: 15px;
+		max-width: 30%;
+		margin: 5px;
+	}
+
+	.caption0 object{
+		position:relative;
+		left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+    	margin-top: 70px;
+	}
+
+	.caption1 {
+		position:relative;
+		padding:20px 40px;
+		left: 0;
+		height: auto;
+		color: #fff;
+	}
+	.caption1 p{
+		font-size: 22px;
+	}
+
+	h3 {
+		margin:0;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		font-size: 25px;
+		letter-spacing: 10px;
+		color: #fff;
+	}
+	.lead{
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		font: 20px "Lato", sans-serif;
+		color: #fff;
+	}
+	.skillpills ul {
+	    padding: 0;
+	    overflow: hidden;
+	}
+
+	.skillpills li {
+		list-style-type: none;
+	    float: left;
+	    padding: 0px 5px 0px 5px;
+	    margin: 2px 5px 2px 5px;
+		
+		border: solid 2px #3F6C8F;
+		border-radius: 3px;
+		background-color: #440BD2;
+	}
+
+	.linkbutton{
+		padding: 20px;
+		margin: 10px;
+
+		border: solid 2px #3F6C8F;
+		background-color: #440BD2;
+		color: white;
+		text-decoration: none;
+		font-size: 22px;		
+
+		border-radius: 3px;
+
+	}
+
+	.linkbutton:hover{
+		border-radius: 3px;
+		border: solid 2px red;
+		cursor: pointer;
+	}
+
+	.tlb1{
+		background-color: #6ABDE6;
+		border: solid 2px #59737F;
+		
+	}
+	.tlb1:hover{
+		border: solid 2px #B3E7FF;
+	}
+	.tlb2{
+		background-color: #AA0F13;
+		border: solid 2px #B36164;
+	}
+	.tlb2:hover{
+		border: solid 2px #FF2129;
+	}
+
+	#b1
+	{
+		display: none;
+		padding: 20px;
+	}
+	#b2
+	{
+		display: none;
+		padding: 20px;
+	}
+	.but {
+		padding: 10px;
+		margin: 10px;
+		color: white;
+		border: solid 2px #3F6C8F;
+		border-radius: 3px;
+		background-color: #440BD2;
+		font-size: 22px;
+
+	}
+	.but:hover
+	{
+		border: solid 2px red;
+		background-color: red;
+
+
+	}
+	#butdiv{
+		display: flex;
+		justify-content: center;
+	}
+
+	.tooltip {
+	    display: inline;
+	    position: relative;
+	    color: #fff;
+	    border-bottom: 1px dotted white;
+	    text-decoration: none;
+	}
+	dl{
+		font-size: 22px;
+    	
+
+	}
+	dt{
+		color: rgba(241, 163, 255, 1);
+	}
+
+	.tooltip:hover:after{
+    		background: #333;
+    		background: rgba(241, 163, 255, 0.9);
+    		border-radius: 5px;
+    		bottom: 26px;
+    		color: #fff;
+    		content: attr(title);
+    		left: 20%;
+    		padding: 5px 15px;
+    		position: absolute;
+    		z-index: 98;
+    		width: 220px;
+		}
+		
+		.tooltip:hover:before{
+    		border: solid;
+    		border-color: rgba(241, 163, 255, 0.9) transparent;
+    		border-width: 6px 6px 0 6px;
+    		bottom: 20px;
+    		content: "";
+    		left: 50%;
+    		position: absolute;
+    		z-index: 99;
+		}
+
+	/* Turn off parallax scrolling for tablets and phones */
+	@media only screen and (max-device-width: 1024px) {
+		.bgimg-1, .bgimg-2, .bgimg-3 {
+			background-attachment: scroll;
+		}
+	}
+
+
+	#footer
+	{
+		position:relative;
+	    right: auto;
+		bottom: 0;
+		left: auto;
+		background-color:black;
+		text-align:right;
+	}
+
+	#footer ul {
+		list-style-type: inline;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    background-color: black;
+		
+	}
+
+	#footer li {
+	    float: left;
+	}
+
+	#footer li a {
+		font-weight: bold;
+	    display: block;
+	    color: #3F6C8F;
+	    text-align: center;
+	    padding: 10px;
+	    text-decoration: none;
+	}
+
+	#footer li a:hover {
+	    
+		color: #54A6E8;
+		text-shadow: 0px 0px 20px #680AFF;
+	}
+
+
+
+	.fa {
+  padding: 10px;
+  font-size: 100px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+	}
+	.fa:hover {
+	    opacity: 0.7;
+	}
+.fa-stack-overflow {
+  background: black;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
