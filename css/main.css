@@ -12,6 +12,12 @@ div
 	background-color:#0F0015;
 
 }
+object {
+	display: block;
+	overflow: hidden;
+}
+
+
 .centerblurb a {
     text-align: center;
     display: block;
@@ -118,6 +124,15 @@ div
     	transform: translate(-50%, -50%);
     	margin-top: 70px;
 	}
+	.caption0 img{
+		position:relative;
+		left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+    	margin-top: 70px;
+	}
+
+
 
 	.caption1 {
 		position:relative;
